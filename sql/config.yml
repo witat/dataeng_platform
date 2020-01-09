@@ -1,9 +1,9 @@
-redshift:
+redshift: # Amazon data base connection for agg process
   dbname : test
   host : redshift-pruksa-datasource.c63llnrhdm9w.ap-southeast-1.redshift.amazonaws.com
   port : 5439
   user : witit_r 
   password : P@ssw0rd
 
-sql : 
+sql :  #  SQL script for data scientist process
   sql_path : 'D:\winback\Programming\SQL_Script/'
