@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS sbd.oppbase1_temp1;
 CREATE TABLE sbd.oppbase1_temp1 AS
 select * 
-from StringMap 
+from public.StringMap 
 where AttributeName= 'opportunitystatecode' 
 and ObjectTypeCode = 1083;
 
@@ -10,7 +10,7 @@ CREATE TABLE sbd.oppbase1_temp2 AS
 select case when ActivityTypeCode = '4201' 
             then ScheduledEnd else null end AS ScheduledEndDate,
     RegardingObjectId as opportunityid
-FROM ActivityPointerBase 
+FROM public.ActivityPointerBase 
 WHERE RegardingObjectId is not null 
 and ScheduledEnd is not null;
 
@@ -25,13 +25,13 @@ GROUP BY opportunityid;
 DROP TABLE IF EXISTS sbd.oppbase1_temp4;
 CREATE TABLE sbd.oppbase1_temp4 AS
 select * 
-from StringMap 
+from public.StringMap 
 where AttributeName ='opportunityratingcode';
 
 DROP TABLE IF EXISTS sbd.oppbase1_temp5;
 CREATE TABLE sbd.oppbase1_temp5 AS
 select * 
-from StringMap 
+from public.StringMap 
 where AttributeName='pfc_potential' 
 and ObjectTypeCode = 3;
 
@@ -39,20 +39,20 @@ DROP TABLE IF EXISTS sbd.oppbase1_temp6;
 CREATE TABLE sbd.oppbase1_temp6 AS
 select pfc_opportunity_lost_reason_subcategoryID,
     max(pfc_name) as lost_reason_subcategory 
-from pfc_opportunity_lost_reason_subcategorybase
+from public.pfc_opportunity_lost_reason_subcategorybase
 group by pfc_opportunity_lost_reason_subcategoryID;
 
 DROP TABLE IF EXISTS sbd.oppbase1_temp7;
 CREATE TABLE sbd.oppbase1_temp7 AS
 select opportunityid,
     max(stageid) as stageid 
-from v_GetDataLeadOppsDashboard_CRM 
+from public.v_GetDataLeadOppsDashboard_CRM 
 group by opportunityid;
 
 DROP TABLE IF EXISTS sbd.oppbase1_temp8;
 CREATE TABLE sbd.oppbase1_temp8 AS
 select * 
-from StringMap 
+from public.StringMap 
 where AttributeName='statuscode' 
 and ObjectTypeCode = 3;
 
@@ -90,7 +90,7 @@ select a.opportunityid,
     a.statecode, 
     a.ownerid,
     f.lost_reason_subcategory 
-from opportunitybase as a 
+from public.opportunitybase as a 
 left join sbd.oppbase1_temp8 as b 
 on a.StatusCode = b.attributevalue
 left join sbd.processstagebase as c 

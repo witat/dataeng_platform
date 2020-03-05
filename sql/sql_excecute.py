@@ -9,8 +9,14 @@ from pathlib import Path
 import yaml
 
 class ds_etl(object):
-    """docstring for ds_etl."""
-    def __init__(self):
+    """Data science ETL process use config YAML iin library"""
+    def __init__(self):    
+        """ This class will use connection database and sql path file
+        in library. You can modify config.yml.
+        
+        Arguments:
+            object {[type]} -- [description]
+        """        
         super(ds_etl, self).__init__()
         cur_path = str(os.path.dirname(os.path.abspath(__file__)))
         config_path = os.path.join(cur_path, 'config.yml')
@@ -26,6 +32,11 @@ class ds_etl(object):
         self.sql_path = cfg['sql']['sql_path']
 
     def excecute(self, script_name):
+        """Excecute sql and save log file to local
+        
+        Arguments:
+            script_name {[text]} -- [SQL Script name]
+        """        
         try:
             os.makedirs(os.path.join(str(Path.home()), 'DS_SQL_log'))
         except:
@@ -60,21 +71,10 @@ class ds_etl(object):
         file_log.close()
         con.close()
 
-if __name__ == "__main__":
-    etl = ds_etl()
-    etl.excecute('test_sql')
+if __name__ == "__main__": 
+    ds_etl().excecute('getdataleadoppsdashboard_crm')
+    # ds_etl().excecute('oppbase')
+    # ds_etl().excecute('target_label_beforebook')
+    # ds_etl().excecute('tmp_crm_lead_before_book')
 
-
-
-# from pruksa_datascience.sql import etl
-
-# config = "D:\winback\Programming\config.yml"
-# etl.ds_etl(config).excecute('test_sql')
-
-
-
-
-
-
-
-
+    

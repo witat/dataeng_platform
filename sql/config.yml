@@ -6,4 +6,4 @@ redshift: # Amazon data base connection for agg process
   password : P@ssw0rd
 
 sql :  #  SQL script for data scientist process
-  sql_path : 'D:\winback\Programming\SQL_Script/'
+  sql_path : 'C:\ProgramData\Anaconda3\Lib\site-packages\pruksa_datascience\sql\sql_script'
