@@ -4,19 +4,13 @@ Pruksa data science project
 [![Join Gitter at https://gitter.im/Microsoft/LightGBM](https://badges.gitter.im/Microsoft/LightGBM.svg)](https://gitter.im/Microsoft/LightGBM?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Slack](https://lightgbm-slack-autojoin.herokuapp.com/badge.svg)](https://lightgbm-slack-autojoin.herokuapp.com)
 
-LightGBM is a gradient boosting framework that uses tree based learning algorithms. It is designed to be distributed and efficient with the following advantages:
+Pruksa data science library is framework that uses version control. It is designed to be distributed and efficient with the following advantages:
 
-- Faster training speed and higher efficiency.
-- Lower memory usage.
-- Better accuracy.
-- Support of parallel and GPU learning.
-- Capable of handling large-scale data.
-
-For further details, please refer to [Features](https://github.com/microsoft/LightGBM/blob/master/docs/Features.rst).
-
-Benefitting from these advantages, LightGBM is being widely-used in many [winning solutions](https://github.com/microsoft/LightGBM/blob/master/examples/README.md#machine-learning-challenge-winning-solutions) of machine learning competitions.
-
-[Comparison experiments](https://github.com/microsoft/LightGBM/blob/master/docs/Experiments.rst#comparison-experiment) on public datasets show that LightGBM can outperform existing boosting frameworks on both efficiency and accuracy, with significantly lower memory consumption. What's more, [parallel experiments](https://github.com/microsoft/LightGBM/blob/master/docs/Experiments.rst#parallel-experiment) show that LightGBM can achieve a linear speed-up by using multiple machines for training in specific settings.
+- Faster tracking.
+- Faster transfer knownlegde.
+- Easy to collaboration.
+- Easy debug.
+- Control coding pattern.
 
 Get Started and Documentation
 -----------------------------
