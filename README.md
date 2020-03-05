@@ -36,62 +36,15 @@ Documentation for contributors:
 - [**How we update readthedocs.io**](https://github.com/microsoft/LightGBM/blob/master/docs/README.rst).
 - Check out the [**Development Guide**](https://github.com/microsoft/LightGBM/blob/master/docs/Development-Guide.rst).
 
-News
-----
-
-Please refer to changelogs at [GitHub releases](https://github.com/microsoft/LightGBM/releases) page.
-
-Some old update logs are available at [Key Events](https://github.com/microsoft/LightGBM/blob/master/docs/Key-Events.md) page.
-
 External (Unofficial) Repositories
 ----------------------------------
 
-Julia-package: https://github.com/Allardvm/LightGBM.jl
-
-JPMML (Java PMML converter): https://github.com/jpmml/jpmml-lightgbm
-
-Treelite (model compiler for efficient deployment): https://github.com/dmlc/treelite
-
-cuML Forest Inference Library (GPU-accelerated inference): https://github.com/rapidsai/cuml
-
-m2cgen (model appliers for various languages): https://github.com/BayesWitnesses/m2cgen
-
-leaves (Go model applier): https://github.com/dmitryikh/leaves
-
-ONNXMLTools (ONNX converter): https://github.com/onnx/onnxmltools
-
 SHAP (model output explainer): https://github.com/slundberg/shap
-
-MMLSpark (LightGBM on Spark): https://github.com/Azure/mmlspark
-
-Kubeflow Fairing (LightGBM on Kubernetes): https://github.com/kubeflow/fairing
-
-ML.NET (.NET/C#-package): https://github.com/dotnet/machinelearning
 
 LightGBM.NET (.NET/C#-package): https://github.com/rca22/LightGBM.Net
 
 Dask-LightGBM (distributed and parallel Python-package): https://github.com/dask/dask-lightgbm
 
-Ruby gem: https://github.com/ankane/lightgbm
-
-Support
--------
-
-- Ask a question [on Stack Overflow with the `lightgbm` tag](https://stackoverflow.com/questions/ask?tags=lightgbm), we monitor this for new questions.
-- Discuss on the [LightGBM Gitter](https://gitter.im/Microsoft/LightGBM).
-- Discuss on the [LightGBM Slack team](https://lightgbm.slack.com).
-  - Use [this invite link](https://lightgbm-slack-autojoin.herokuapp.com/) to join the team.
-- Open **bug reports** and **feature requests** (not questions) on [GitHub issues](https://github.com/microsoft/LightGBM/issues).
-
-How to Contribute
------------------
-
-Check [CONTRIBUTING](https://github.com/microsoft/LightGBM/blob/master/CONTRIBUTING.md) page.
-
-Microsoft Open Source Code of Conduct
--------------------------------------
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 Reference Papers
 ----------------
@@ -107,4 +60,4 @@ Huan Zhang, Si Si and Cho-Jui Hsieh. "[GPU Acceleration for Large-scale Tree Boo
 License
 -------
 
-This project is licensed under the terms of the MIT license. See [LICENSE](https://github.com/microsoft/LightGBM/blob/master/LICENSE) for additional details.
+This project is licensed under the terms of the Pruksa license. 
