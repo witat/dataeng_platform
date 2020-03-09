@@ -18,7 +18,7 @@ Get Started and installation
 ```sh
 # git bash windows version
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
-git clone install pandas
+git clone https://gitlab.com/pruksa_data_science/pruksa_data_science.git
 ```
 
 External (Unofficial) Repositories
