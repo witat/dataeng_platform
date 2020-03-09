@@ -16,7 +16,7 @@ Get Started and installation
 -----------------------------
 
 ```sh
-# git
+# git bash windows version
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
 git clone install pandas
 ```
