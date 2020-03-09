@@ -12,19 +12,14 @@ Pruksa data science library is framework that uses version control. It is design
 - Easy debug.
 - Control coding pattern.
 
-Get Started 
+Get Started and installation
 -----------------------------
-Install:
+
 ```sh
 # git
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
 git clone install pandas
 ```
-Next you may want to read:
-
-- [**Examples**](https://github.com/microsoft/LightGBM/tree/master/examples) showing example.
-- [**Features**](https://github.com/microsoft/LightGBM/blob/master/docs/Features.rst) and algorithms supported by Pruksa data science.
-- [**Parameters**](https://github.com/microsoft/LightGBM/blob/master/docs/Parameters.rst) is an exhaustive list of customization you can make.
 
 External (Unofficial) Repositories
 ----------------------------------
