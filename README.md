@@ -14,13 +14,16 @@ Pruksa data science library is framework that uses version control. It is design
 
 Get Started and installation
 -----------------------------
-
+Install library 
 ```sh
 # git bash windows version
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
 git clone https://gitlab.com/pruksa_data_science/pruksa_data_science.git
 ```
-
+Install requirement package
+```sh
+pip install -r requirements.txt
+```
 External (Unofficial) Repositories
 ----------------------------------
 
