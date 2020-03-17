@@ -25,6 +25,11 @@ Install requirement package
 pip install -r requirements.txt
 ```
 
+Project organize 
+-----------------------------
+- SQL
+- Model
+- Project
 
 Reference Papers
 ----------------
