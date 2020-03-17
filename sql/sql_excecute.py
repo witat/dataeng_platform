@@ -10,7 +10,7 @@ import yaml
 
 class ds_etl(object):
     """Data science ETL process use config YAML iin library"""
-    def __init__(self):    
+    def __init__(self, db_name):    
         """ This class will use connection database and sql path file
         in library. You can modify config.yml.
         
@@ -23,7 +23,7 @@ class ds_etl(object):
         with open(config_path , 'r') as ymlfile:
             cfg = yaml.load(ymlfile, Loader = yaml.FullLoader)
 
-        self.conn = psycopg2.connect(dbname = cfg['redshift']['dbname'],
+        self.conn = psycopg2.connect(dbname = db_name,
                                     host = cfg['redshift']['host'],
                                     port = cfg['redshift']['port'],
                                     user = cfg['redshift']['user'],
@@ -72,9 +72,17 @@ class ds_etl(object):
         con.close()
 
 if __name__ == "__main__": 
-    ds_etl().excecute('getdataleadoppsdashboard_crm')
-    # ds_etl().excecute('oppbase')
-    # ds_etl().excecute('target_label_beforebook')
-    # ds_etl().excecute('tmp_crm_lead_before_book')
+    # Extract data from orginal data source
+    ds_etl('test').excecute('getdataunitbyleadoppsdashboard_crm')
+    ds_etl('test').excecute('getdataleadoppsdashboard_crm')
+    ds_etl('test').excecute('vw_sale_fact')
+    ds_etl('test').excecute('rpt_datacustomerprofile_crm')
+    ds_etl('test').excecute('target_label_beforebook')
+    ds_etl('test').excecute('tmp_crm_lead_before_book')
+    ds_etl('test').excecute('data_model_winback_beforebook')
+    ds_etl('dev_edw').excecute('tmp')
+
+    # Data mart for use
+
 
     
