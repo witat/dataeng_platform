@@ -18,7 +18,7 @@ Install library
 ```sh
 # git bash windows version
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
-git clone https://gitlab.com/pruksa_data_science/pruksa_data_science.git
+git clone https://*username:*password@gitlab.com/pruksa_data_science/pruksa_data_science.git # * ใส่ของตัวเองครับ
 ```
 Install requirement package
 ```sh
