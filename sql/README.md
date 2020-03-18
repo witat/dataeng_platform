@@ -44,10 +44,10 @@ sql =   """
 ds_etl('test').excute(sql)
 
 ```
-AWS redshift table description
+AWS Redshift table description
 -----------------------------
-- vw_salefact
--   cevev
+- public.vw_salefact ข้อมูล pspro ทั้งหมดที่พี่ปูสรุปไว้เป็น summary มีข้อมูลตั้งแต่  Before book เป็นต้นไปจนถึง Transfer
+-  
 
 
 
