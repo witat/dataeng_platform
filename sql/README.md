@@ -44,3 +44,11 @@ sql =   """
 ds_etl('test').excute(sql)
 
 ```
+AWS redshift table description
+-----------------------------
+- vw_salefact
+-   cevev
+
+
+
+
