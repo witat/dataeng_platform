@@ -6,7 +6,7 @@ Some application need to use SQL script query data. This library use python on t
 
 Example
 -----------------------------
-Read data from database to pandas dataframe
+1. ) Read data from database to pandas dataframe
 ```python
 from pruksa_datascience.sql.sql_excecute import ds_etl
 
@@ -29,7 +29,7 @@ unitid projectid projectmasterid                projectname
 4  CON090-0018    CON090          CON090  The Connect 9 นวมินทร์ 70
 ```
 
-ETL script excecute 
+2. ) ETL script excecute 
 
 ```python
 from pruksa_datascience.sql.sql_excecute import ds_etl
