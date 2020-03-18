@@ -44,6 +44,20 @@ sql =   """
 ds_etl('test').excute(sql)
 
 ```
+Database configuration file YAML
+-----------------------------
+``` YAML
+redshift: # Amazon data base connection for agg process
+  dbname : test 
+  host : redshift-pruksa-datasource.c63llnrhdm9w.ap-southeast-1.redshift.amazonaws.com # Database hosting AWS
+  port : 5439 # Port
+  user : witit_r # Username 
+  password : P@ssw0rd # Password
+
+sql :  #  SQL script for data scientist process
+  sql_path : 'C:\ProgramData\Anaconda3\Lib\site-packages\pruksa_datascience\sql\sql_script' # SQL script path
+  ```
+
 AWS Redshift table description
 -----------------------------
 - public.vw_salefact ข้อมูล pspro ทั้งหมดที่พี่ปูสรุปไว้เป็น summary มีข้อมูลตั้งแต่  Before book เป็นต้นไปจนถึง Transfer
