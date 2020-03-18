@@ -18,21 +18,18 @@ Install library
 ```sh
 # git bash windows version
 cd C:/ProgramData/Anaconda3/Lib/site-packages # Default library Anaconda3
-git clone https://gitlab.com/pruksa_data_science/pruksa_data_science.git
+git clone https://*{username}*:*{password}*@gitlab.com/pruksa_data_science/pruksa_data_science.git # * ใส่ของตัวเองครับ
 ```
 Install requirement package
 ```sh
 pip install -r requirements.txt
 ```
-External (Unofficial) Repositories
-----------------------------------
 
-SHAP (model output explainer): https://github.com/slundberg/shap
-
-LightGBM.NET (.NET/C#-package): https://github.com/rca22/LightGBM.Net
-
-Dask-LightGBM (distributed and parallel Python-package): https://github.com/dask/dask-lightgbm
-
+Project organize 
+-----------------------------
+- SQL
+- Model
+- Project
 
 Reference Papers
 ----------------
