@@ -70,18 +70,23 @@ class ds_etl(object):
         file_log.write('\nOverall take time : ' + str(time.time() - start_process) + 'seconds')
         file_log.close()
         con.close()
+    
+    def query(self, sql_script):
+        return pd.read_sql(sql_script, con = self.conn)
 
 if __name__ == "__main__": 
     # Extract data from orginal data source
-    ds_etl('test').excecute('getdataunitbyleadoppsdashboard_crm')
-    ds_etl('test').excecute('getdataleadoppsdashboard_crm')
-    ds_etl('test').excecute('vw_sale_fact')
-    ds_etl('test').excecute('rpt_datacustomerprofile_crm')
-    ds_etl('test').excecute('target_label_beforebook')
-    ds_etl('test').excecute('tmp_crm_lead_before_book')
-    ds_etl('test').excecute('data_model_winback_beforebook')
-    ds_etl('dev_edw').excecute('tmp')
+    # ds_etl('test').excecute('getdataunitbyleadoppsdashboard_crm')
+    # ds_etl('test').excecute('getdataleadoppsdashboard_crm')
+    # ds_etl('test').excecute('vw_sale_fact')
+    # ds_etl('test').excecute('rpt_datacustomerprofile_crm')
+    # ds_etl('test').excecute('target_label_beforebook')
+    # ds_etl('test').excecute('tmp_crm_lead_before_book')
+    # ds_etl('test').excecute('data_model_winback_beforebook')
+    # ds_etl('dev_edw').excecute('tmp')
 
+    df = ds_etl('test').query('select * from vw_sale_fact limit 10')
+    print(df)
     # Data mart for use
 
 
