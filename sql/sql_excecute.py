@@ -156,11 +156,11 @@ class ds_etl(object):
         create_table = create_table[:-1] + ');'
         print(create_table)
         redshift = psycopg2.connect(
-        host='redshift-pruksa-datasource.c63llnrhdm9w.ap-southeast-1.redshift.amazonaws.com',
-        user='witit_r',
-        port=5439,
-        password='P@ssw0rd',
-        dbname='test')
+        host= ####,
+        user=####,
+        port=####,
+        password='#####',
+        dbname='####')
 
         cur = redshift.cursor()
         cur.execute(sql_droptable)
@@ -191,10 +191,10 @@ class ds_etl(object):
         file_path = "D:/Users/witat_r/Documents/project_status_segment.xlsx"
         filename = filename + '_' + date_time + '.xlsx'
 
-        sender_address = r'witat_r@pruksa.com'
-        sender_pass = r'1901Wpwj#'
-        receiver_address = 'peera_b@pruksa.com'
-        receiver_cc_address = 'peera_b@pruksa.com,sastrawut_p@pruksa.com'
+        sender_address = r'#####'
+        sender_pass = r'#####'
+        receiver_address = '#####'
+        receiver_cc_address = '#######'
 
         msg = MIMEMultipart()  
         msg['From'] = sender_address 
