@@ -24,11 +24,10 @@ Install requirement package
 pip install -r requirements.txt
 ```
 
-Project organize 
+Main code
 -----------------------------
-- SQL [Data engineer platform: ]
-- Model
-- Project
+- Data engineer platform link : sql/sql_excecute.py
+- Model link : model/lightgbm.py
 
 Reference Papers
 ----------------
