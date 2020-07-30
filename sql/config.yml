@@ -4,6 +4,22 @@ redshift: # Amazon data base connection for agg process
   port : 5439
   user : witit_r 
   password : P@ssw0rd
+  
+pspro:
+  host : '10.100.10.76'
+  port : 9093
+  user : ingenio 
+  password : ingenio#01
 
 sql :  #  SQL script for data scientist process
   sql_path : 'C:\ProgramData\Anaconda3\Lib\site-packages\pruksa_datascience\sql\sql_script'
+
+aws :
+  ACCESS_KEY_ID : 'AKIA4NCCBOPFY4MO4PST'
+  SECRET_ACCESS_KEY : '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'
+  REGION_NAME : 'ap-southeast-1'
+  BUCKET_NAME : 'aws-emr-resources-852689515467-ap-southeast-1'
+
+email :
+  sender_email : 'witat_r@pruksa.com'
+  sender_password : '1901Wpwj#'
