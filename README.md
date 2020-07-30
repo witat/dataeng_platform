@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 Main code
 -----------------------------
-- [**Data engineer**] platform (https://github.com/witat/dataeng_platform/blob/master/sql/sql_excecute.py)
+- [**Data engineer platform**] (https://github.com/witat/dataeng_platform/blob/master/sql/sql_excecute.py)
 - [**Model**] (https://github.com/witat/dataeng_platform/blob/master/model/lightgbm.py)
 
 Reference Papers
