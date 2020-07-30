@@ -173,8 +173,8 @@ class ds_etl(object):
         self.s3.upload_file(filename, self.BUCKET_NAME, 'Test/' + filename)
 
         sql = """copy {}.{} from 's3://aws-emr-resources-852689515467-ap-southeast-1/Test/{}.csv'
-        access_key_id 'AKIA4NCCBOPFY4MO4PST'
-        secret_access_key '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'
+        access_key_id ####
+        secret_access_key #####
         region 'ap-southeast-1'
         ignoreheader 1
         null as 'NA'
