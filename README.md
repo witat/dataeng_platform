@@ -26,7 +26,7 @@ pip install -r requirements.txt
 
 Project organize 
 -----------------------------
-- SQL
+- SQL [Data engineer platform: ]
 - Model
 - Project
 
